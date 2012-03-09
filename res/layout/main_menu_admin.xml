@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/bRemoveCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:text="Remove Customer" />
+
+        <Button
+            android:id="@+id/bRemoveProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bRemoveCustomer"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="26dp"
+            android:text="Remove Product" />
+
+        <EditText
+            android:id="@+id/etRemoveProduct"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/bRemoveProduct"
+            android:layout_marginLeft="16dp"
+            android:hint="product #" />
+
+        <EditText
+            android:id="@+id/etCustomersOrders"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etRemoveProduct"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="16dp"
+            android:hint="customer #" />
+
+        <Button
+            android:id="@+id/bCustomersOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etCustomersOrders"
+            android:layout_alignBottom="@+id/etCustomersOrders"
+            android:layout_alignParentRight="true"
+            android:text="List Customers orders" />
+
+        <EditText
+            android:id="@+id/etRemoveCustomer"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bRemoveCustomer"
+            android:layout_alignBottom="@+id/bRemoveCustomer"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:hint="customer #" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bListCustomers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="List Customers" />
+
+        <Button
+            android:id="@+id/bAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Add Product" />
+
+        <Button
+            android:id="@+id/bAddCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Add Customer" />
+
+    </RelativeLayout>

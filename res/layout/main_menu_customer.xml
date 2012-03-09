@@ -1,0 +1,65 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <EditText
+            android:id="@+id/etFindMyOrderID"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="100dp"
+            android:hint="order #" />
+
+        <Button
+            android:id="@+id/bFindMyOrderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/etFindMyOrderID"
+            android:text="Find My Order" />
+
+        <EditText
+            android:id="@+id/etRemoveMyOrder"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etFindMyOrderID"
+            android:layout_marginTop="30dp"
+            android:hint="order #" />
+
+        <Button
+            android:id="@+id/bRemoveMyOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etRemoveMyOrder"
+            android:layout_alignBottom="@+id/etRemoveMyOrder"
+            android:layout_alignParentRight="true"
+            android:text="Remove This Order" />
+
+        <Button
+            android:id="@+id/bListProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="List Products" android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/bListMyOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="List My Orders" android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/bAddOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Add Order" android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>

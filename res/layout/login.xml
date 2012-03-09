@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvLoginInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="enter your userID:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/bLaunchCustomerMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="I&apos;m a Customer" />
+
+    <Button
+        android:id="@+id/bLaunchAdminMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="I&apos;m an Admin" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvLoginInfo"
+        android:layout_marginTop="18dp"
+        android:text="Submit" android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/etUserID"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bLogin"
+        android:layout_alignBottom="@+id/bLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:hint="user"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

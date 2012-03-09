@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="shop.json.client"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10" />
+    
+    
+	<uses-permission android:name="android.permission.INTERNET" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".ListProducts"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="shop.json.client.LISTPRODUCTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".ListCustomers"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="shop.json.client.LISTCUSTOMERS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+                <activity
+            android:name=".Login"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name">
+            <intent-filter >
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainMenuAdmin"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name">
+            <intent-filter >
+               <action android:name="shop.json.client.MAINMENUADMIN" />
+               <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".MainMenuCustomer"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name">
+            <intent-filter >
+               <action android:name="shop.json.client.MAINMENUCUSTOMER" />
+               <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".AddOrderCustomer"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:label="@string/app_name">
+            <intent-filter >
+               <action android:name="shop.json.client.ADDORDERCUSTOMER" />
+               <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest>

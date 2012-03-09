@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etAddOrder_number"
+        android:layout_width="match_parent"
+        android:hint="Order Number"
+        android:layout_height="wrap_content" android:layout_margin="10dp">
+		
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etAddOrder_customerid"
+        android:layout_width="match_parent"
+                android:hint="Customer ID"
+        android:layout_height="wrap_content" android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/etAddOrder_productid"
+        android:layout_width="match_parent"
+                android:hint="Product ID"
+        android:layout_height="wrap_content" android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/bAddOrder_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
